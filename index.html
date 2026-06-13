@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Samreen Shaikh – Learn, Earn & Shine ✨ | Women Community</title>
-<meta name="description" content="Samreen Shaikh  – Online Earning Coach for Women"/>
+<meta name="description" content="Samreen Shaikh – Online Earning Coach for Women"/>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1617079532688647');fbq('track','PageView');</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1617079532688647&ev=PageView&noscript=1"/></noscript>
@@ -103,18 +103,18 @@ img{display:block;max-width:100%;}
 .cstat-l{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
 
 /* TESTI */
-
-
+#testi{padding:36px 0;background:var(--white);overflow:hidden;border-bottom:1px solid var(--bg2);}
+.testi-head{text-align:center;padding:0 20px;margin-bottom:20px;}
 .sec-h{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:900;color:var(--navy);margin-bottom:6px;}
 .sec-h span{color:var(--gold);}
 .sec-p{font-size:.84rem;color:var(--muted);}
-
-
-
-to{transform:translateX(-50%)}}
-
-
-
+.mou{overflow:hidden;-webkit-mask:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);}
+.mtr{display:flex;gap:12px;width:max-content;animation:msc 32s linear infinite;}
+.mtr:hover{animation-play-state:paused;}
+@keyframes msc{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tc{flex:0 0 175px;border-radius:14px;overflow:hidden;flex-shrink:0;box-shadow:0 4px 16px rgba(13,27,62,.08);border:1.5px solid var(--bg2);transition:all .3s;}
+.tc:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(13,27,62,.14);}
+.tc img{width:100%;display:block;}
 
 /* BENEFITS */
 #benefits{padding:36px 20px;background:var(--bg);border-bottom:1px solid var(--bg2);text-align:center;}
@@ -246,11 +246,11 @@ footer{background:var(--navy);padding:20px 20px;text-align:center;}
     <div class="chip">💻 Freelancer</div>
     <div class="chip">🎯 Online-Skills Coach</div>
   </div>
-  <button class="wa-btn-coach sr" onclick="openFormModal('Coach CTA')">📲 Connect on WhatsApp</button>
   <div class="vision-box sr">
     <div class="vision-title">🎯 My Vision:</div>
     <div class="vision-text">"Empower Women to Empower Themselves"</div>
   </div>
+  <button class="wa-btn-coach sr" onclick="openFormModal('Coach CTA')">📲 Connect on WhatsApp</button>
   <div class="coach-stats sr">
     <div class="cstat"><div class="cstat-n counter" data-target="3" data-suffix="+">0+</div><div class="cstat-l">Years of Experience</div></div>
     <div class="cstat"><div class="cstat-n counter" data-target="2000" data-suffix="+">0+</div><div class="cstat-l">Women Helped</div></div>
@@ -258,7 +258,13 @@ footer{background:var(--navy);padding:20px 20px;text-align:center;}
   </div>
 </section>
 
-
+<section id="testi">
+  <div class="testi-head sr">
+    <h2 class="sec-h">✨ Real <span>Success Stories</span></h2>
+    <p class="sec-p">100% real feedback from women in our community</p>
+  </div>
+  <div class="mou"><div class="mtr" id="row1"></div></div>
+</section>
 
 <section id="benefits">
   <div class="sec-label sr">What Happens When You Join?</div>
@@ -268,9 +274,7 @@ footer{background:var(--navy);padding:20px 20px;text-align:center;}
     <div class="bc sr" style="transition-delay:.12s"><div class="bc-num">3</div><div class="bc-title">Daily Mentorship</div><p class="bc-desc">24/7 support & community access</p></div>
     <div class="bc sr" style="transition-delay:.18s"><div class="bc-num">4</div><div class="bc-title">Start Earning</div><p class="bc-desc">Begin from Week 1 confidently</p></div>
   </div>
-  <div style="text-align:center;">
-    <button class="join-btn sr" onclick="openFormModal('Benefits CTA')">📲 Get Started Now</button>
-  </div>
+  <button class="join-btn sr" onclick="openFormModal('Benefits CTA')">📲 Get Started Now</button>
 </section>
 
 <section id="know">
@@ -313,7 +317,7 @@ footer{background:var(--navy);padding:20px 20px;text-align:center;}
     </div>
     <div class="num-row sr"><span>📌 Save My Number: <strong>8600477092</strong></span></div>
     <button class="wa-cta-btn sr" onclick="openFormModal('CTA Button')">📲 Message on WhatsApp Now</button>
-    <a href="https://www.instagram.com/digilearn2026" target="_blank" rel="noopener" class="ig-btn sr">
+    <a href="https://www.instagram.com" target="_blank" rel="noopener" class="ig-btn sr">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
       Follow on Instagram
     </a>
@@ -335,7 +339,7 @@ footer{background:var(--navy);padding:20px 20px;text-align:center;}
 <script>
 const SHEET_URL='https://script.google.com/macros/s/AKfycbydemDcngE_NhznS0Oe1BTKQBoO0ik977qmb_Ulnce3oM1WrdS7cI3yjgPVzPJoGuGSrw/exec';
 const WA_NUMBER='918600477092';
-const imgs=[];
+const imgs=['https://i.ibb.co/Z1dB1vjS/8.jpg','https://i.ibb.co/nqy3L8Gy/9','https://i.ibb.co/WpRHtJK6/10.jpg','https://i.ibb.co/84x46FWM/13.jpg','https://i.ibb.co/Mxsgs1J5/15.webp'];
 
 function openM(id){document.getElementById(id).classList.add('on');document.body.style.overflow='hidden';}
 function closeM(id){document.getElementById(id).classList.remove('on');document.body.style.overflow='';}
@@ -343,7 +347,7 @@ function openFormModal(src){clearF();document.getElementById('formSource').value
 document.querySelectorAll('.ov').forEach(o=>o.addEventListener('click',function(e){if(e.target===this)closeM(this.id);}));
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeM('formModal');closeM('privacyModal');}});
 function clearF(){['m-name','m-phone','m-age','m-gender','m-profession'].forEach(id=>document.getElementById(id).value='');document.getElementById('formStatus').textContent='';const b=document.getElementById('sendBtn');b.disabled=false;b.textContent='📲 Send to WhatsApp';}
-const phoneEl=document.getElementById('m-phone');if(phoneEl)phoneEl.addEventListener('input',function(){this.value=this.value.replace(/\D/g,'').slice(0,10);});
+document.getElementById('m-phone').addEventListener('input',function(){this.value=this.value.replace(/\D/g,'').slice(0,10);});
 async function submitForm(){
   const name=document.getElementById('m-name').value.trim(),phone=document.getElementById('m-phone').value.trim(),age=document.getElementById('m-age').value.trim(),gender=document.getElementById('m-gender').value,profession=document.getElementById('m-profession').value,source=document.getElementById('formSource').value;
   if(!name||!phone||!age||!gender||!profession){document.getElementById('formStatus').textContent='⚠️ Please fill all fields.';return;}
@@ -359,8 +363,9 @@ async function saveSheet(d){
   const p='?timestamp='+encodeURIComponent(new Date().toLocaleString('en-IN'))+'&name='+encodeURIComponent(d.name)+'&phone='+encodeURIComponent(d.phone)+'&age='+encodeURIComponent(d.age)+'&gender='+encodeURIComponent(d.gender)+'&profession='+encodeURIComponent(d.profession)+'&source='+encodeURIComponent(d.source);
   try{await fetch(SHEET_URL+p,{method:'GET',mode:'no-cors'});}catch(e){}
 }
-(function(){const el=document.getElementById('heroCount');if(!el)return;const target=100000,dur=2400,s=performance.now(),ease=p=>p===1?1:1-Math.pow(2,-10*p);const tick=now=>{const p=Math.min((now-s)/dur,1);el.textContent=Math.floor(ease(p)*target).toLocaleString('en-IN');if(p<1)requestAnimationFrame(tick);};requestAnimationFrame(tick);})();
+(function(){const el=document.getElementById('heroCount'),target=100000,dur=2400,s=performance.now(),ease=p=>p===1?1:1-Math.pow(2,-10*p);const tick=now=>{const p=Math.min((now-s)/dur,1);el.textContent=Math.floor(ease(p)*target).toLocaleString('en-IN');if(p<1)requestAnimationFrame(tick);};requestAnimationFrame(tick);})();
 function animC(el){if(el.dataset.done)return;el.dataset.done='1';const target=parseInt(el.dataset.target),suffix=el.dataset.suffix||'',prefix=el.dataset.prefix||'',fmt=el.dataset.format,dur=target>=100000?2000:1200,s=performance.now(),ease=p=>p===1?1:1-Math.pow(2,-10*p);const tick=now=>{const p=Math.min((now-s)/dur,1),v=Math.floor(ease(p)*target);if(fmt==='full'&&v>=100000)el.textContent=prefix+Math.floor(v/100000)+'L+';else el.textContent=prefix+v.toLocaleString('en-IN')+suffix;if(p<1)requestAnimationFrame(tick);};requestAnimationFrame(tick);}
+const row1=document.getElementById('row1');[...imgs,...imgs].forEach(src=>{const d=document.createElement('div');d.className='tc';d.innerHTML=`<img src="${src}" alt="Feedback" loading="lazy"/>`;row1.appendChild(d);});
 function tFaq(btn){const item=btn.closest('.fi'),isOpen=item.classList.contains('open');document.querySelectorAll('.fi.open').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');}
 const obs=new IntersectionObserver(en=>{en.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('.counter').forEach(animC);obs.unobserve(e.target);}});},{threshold:.08});
 document.querySelectorAll('.sr').forEach(el=>obs.observe(el));
